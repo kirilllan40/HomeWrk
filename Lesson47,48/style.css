@@ -1,0 +1,53 @@
+body {
+    background: black;
+}
+
+table,
+tr,
+td,
+caption,
+thead,
+tbody,
+tfoot,
+th {
+    border: 2px rgb(128 26 161);
+    color: white;
+    border-style: solid;
+    font-size: 30px;
+    width: 383px;
+    background: linear-gradient(224deg, rgba(46, 49, 146, 0.70) 0%, rgba(212, 20, 90, 0.70) 100%);
+    padding: 15px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+caption {
+    width: 100%;
+}
+
+#total {
+    text-align: center;
+}
+
+.form {
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    color: white;
+    border: 2px rgba(212, 20, 90, 0.70);
+}
+
+.button {
+    color: black;
+    padding-right: 60px;
+}
+
+fieldset {
+    border: 2px solid rgba(212, 20, 90, 0.70);
+    background: linear-gradient(224deg, rgba(46, 49, 146, 0.70) 0%, rgba(212, 20, 90, 0.70) 100%);
+}

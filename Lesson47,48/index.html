@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица и форма</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="table">
+        <table>
+            <caption>Какая то таблица</caption>
+            <thead>
+                <tr>
+                    <th>Значение</th>
+                    <th>Значение</th>
+                    <th>Значение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Артикл</td>
+                    <td>Цена</td>
+                    <td>Дата</td>
+                </tr>
+                <tr>
+                    <td>Артикл</td>
+                    <td>Цена</td>
+                    <td>Дата</td>
+                </tr>
+                <tr>
+                    <td>Артикл</td>
+                    <td>Цена</td>
+                    <td>Дата</td>
+                </tr>
+                <tr>
+                    <td>Артикл</td>
+                    <td>Цена</td>
+                    <td>Дата</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Итог</td>
+                    <td id="total" colspan="2">Значение</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="form">
+        <form>
+            <fieldset>
+                <label>Ваш логин</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Ваш пароль</label>
+                <input type="text">
+                <br>
+                <br>
+                <button class="button" type="submit">Войти</button>
+                <button class="button" type="reset">Стереть все</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
