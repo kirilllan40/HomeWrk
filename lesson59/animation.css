@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(270deg, rgba(46, 49, 146, 0.70) 0%, rgba(212, 20, 90, 0.70) 98.16%);
+}
+
+.wrapper {
+  padding: 50px;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+
+}
+
+.block {
+  border: 2px solid purple;
+  width: 100px;
+  height: 98px;
+  animation: animation-block-1 3s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  position: absolute;
+
+}
+
+@keyframes animation-block-1 {
+  0% {
+    left: 0%;
+    background-color: white;
+  }
+
+  100% {
+    left: calc(100% - 100px);
+    background-color: purple;
+
+  }
+}
+
+.container-bot {
+
+  width: 100px;
+  height: 460px;
+  position: absolute;
+  top: 160px;
+  left: 1200px;
+}
+
+.container-bot__block {
+  border: 2px solid purple;
+  width: 98px;
+  height: 100px;
+  position: absolute;
+  animation: animation-block-2 3s infinite alternate ease-in;
+  animation-delay: 3s;
+}
+
+@keyframes animation-block-2 {
+  0% {
+    bottom: calc(100% - 100px);
+    background-color: purple
+  }
+
+  100% {
+    bottom: 0px;
+    background-color: white;
+  }
+}
+
+.container-left {
+  position: absolute;
+  top: 631px;
+  width: 1251px;
+  height: 100px;
+
+}
+
+.container-left__block {
+  border: 2px solid purple;
+  width: 100px;
+  height: 98px;
+  position: absolute;
+  right: 0px;
+  animation: animation-block-3 3s infinite alternate ease-in;
+  animation-delay: 6s;
+
+}
+
+@keyframes animation-block-3 {
+  0% {
+    left: calc(100% - 100px);
+    background-color: white;
+
+  }
+
+  100% {
+    left: 0px;
+    background-color: purple;
+  }
+}
+
+.container-top {
+
+  width: 100px;
+  height: 460px;
+  position: absolute;
+  top: 160px;
+}
+
+.container-top__block {
+  border: 2px solid purple;
+  width: 98px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  animation: animation-block-4 3s infinite alternate ease-in;
+  animation-delay: 9s;
+}
+
+@keyframes animation-block-4 {
+  0% {
+    bottom: 0px;
+    background-color: purple;
+  }
+
+  100% {
+    bottom: calc(100% - 100px);
+    background-color: white;
+  }
+}
